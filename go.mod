@@ -1,4 +1,4 @@
-module change_me
+module gonew
 
 go 1.25.0
 
@@ -167,6 +167,7 @@ require (
 	github.com/spf13/afero v1.15.0 // indirect
 	github.com/spf13/cast v1.5.0 // indirect
 	github.com/spf13/cobra v1.10.2 // indirect
+	github.com/spf13/cobra-cli v1.3.0 // indirect
 	github.com/spf13/jwalterweatherman v1.1.0 // indirect
 	github.com/spf13/pflag v1.0.10 // indirect
 	github.com/spf13/viper v1.12.0 // indirect
@@ -215,5 +216,6 @@ require (
 
 tool (
 	github.com/golangci/golangci-lint/v2/cmd/golangci-lint
+	github.com/spf13/cobra-cli
 	golang.org/x/tools/cmd/goimports
 )
