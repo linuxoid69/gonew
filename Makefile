@@ -28,3 +28,7 @@ tidy:
 .PHONY: lint
 lint:
 	@bin/golangci-lint run
+
+.PHONY: release
+release:
+	@goreleaser release --snapshot
