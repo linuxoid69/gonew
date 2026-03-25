@@ -26,8 +26,12 @@ tidy:
 	@go mod tidy
 
 .PHONY: lint
-lint:
+lint: ## Lint the code
 	@bin/golangci-lint run
+
+.PHONY: lint-fix
+lint-fix: ## Lint the code
+	@bin/golangci-lint run --fix
 
 .PHONY: release
 release:
