@@ -1,0 +1,70 @@
+version: "2"
+run:
+  tests: false # не проверяем юнит тесты
+
+linters:
+  enable:
+    - asciicheck
+    - bodyclose
+    - contextcheck
+    - copyloopvar
+    - dogsled
+    - dupl
+    - durationcheck
+    - err113
+    - errcheck
+    - errname
+    - errorlint
+    - govet
+    - funlen
+    - goconst
+    - gocritic
+    - gosec
+    - iface
+    - importas
+    - lll
+    - misspell
+    - mnd
+    - nakedret
+    - nilerr
+    - nilnil
+    - nolintlint
+    - revive
+    - sqlclosecheck
+    - unused
+    - usestdlibvars
+    - wastedassign
+    - whitespace
+    - wrapcheck
+    - wsl_v5
+  settings:
+    govet:
+      disable-all: true
+      enable:
+        - fieldalignment
+        - waitgroup
+    gosec:
+      excludes:
+        - G114
+  exclusions:
+    generated: lax
+    presets:
+      - comments
+      - common-false-positives
+      - legacy
+      - std-error-handling
+    paths:
+      - third_party$
+      - builtin$
+      - examples$
+formatters:
+  enable:
+    - gci
+    - gofmt
+    - goimports
+  exclusions:
+    generated: lax
+    paths:
+      - third_party$
+      - builtin$
+      - examples$
