@@ -1,3 +1,10 @@
 {
-    "go.toolsGopath": "${workspaceFolder}"
+    "go.lintTool": "golangci-lint",
+    "go.alternateTools": {
+        "golangci-lint": "${workspaceFolder}/bin/golangci-lint"
+    },
+    "go.lintFlags": [
+        "--fast-only"
+    ],
+    "go.lintOnSave": "workspace"
 }
